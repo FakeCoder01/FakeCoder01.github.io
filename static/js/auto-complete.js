@@ -24,7 +24,7 @@ const auto_complete_words =  {
     "awards.txt"
   ],
   "contact": ["send-message",  "contacts.txt"],
-  "~" : ["about.txt", "skils.txt","resume.txt", "projects", "experiences", "education-and-awards", "contact"],
+  "~" : ["about.txt", "skils.txt","resume.pdf", "projects", "experiences", "education-and-awards", "contact"],
   "commands" : ["help", "cat", "cd", "ls", "pwd", "clear", "exit", "lang"]
 }
 const input = document.getElementById('command')

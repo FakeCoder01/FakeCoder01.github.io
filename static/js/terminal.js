@@ -61,7 +61,7 @@ const commands_list = {
     },
     "about.txt",
     "skils.txt",
-    "resume.txt",
+    "resume.pdf",
   ],
   "dir_no": {
     'projects': 0,
