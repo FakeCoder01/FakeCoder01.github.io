@@ -1,0 +1,112 @@
+*{
+  cursor: none !important;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.custom-cursor {
+  background-color: #32cb00;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 18px;
+  pointer-events: none;
+  animation: blink 1000ms infinite;
+}
+
+.custom-cursor::before {
+  background-color: #32cb00;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor.click {
+  background-color: #32cb00;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+#layscreen {
+  z-index: 999;
+  margin-bottom: 8px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(79, 180, 48, 0.767); 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #08850e; 
+}
+@media (min-width: 600px){
+  .i-dont-know-what-im-doing{
+    font-size : 14px;
+  }
+  input{
+    width: 200px;
+  }
+}
+
+#resume-short-link{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#resume-short-link:hover{
+  border: 5px solid #32cb00;
+  width: 95px;
+  height: 95px;
+}
+
+input {
+  caret-color: rgb(215, 248, 29);
+}
